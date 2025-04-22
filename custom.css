@@ -43,3 +43,33 @@
         height: 64px;
     }
 }
+
+.clickable-pill:hover,
+.clickable-pill.active {
+    background-color: #222;
+    color: white;
+}
+
+.clickable-pill {
+    border-radius: 1000px;
+    border: 1px solid #ddd;
+    background: #eee;
+    padding: 7px 12px 5px;
+    margin-right: 8px;
+    scroll-snap-align: start;
+    white-space: nowrap;
+}
+
+button {
+    background-color: unset;
+    box-shadow: none;
+    border: unset;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.utility-max-width {
+    max-width: 322px;
+}
