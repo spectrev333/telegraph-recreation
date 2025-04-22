@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telegraph</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+<!-- header section -->
+<header class="container-fluid border-bottom border-dark border-2 m-0 p-0">
+
+    <!-- top section -->
+    <div class="container-fluid border-top border-bottom m-0 p-0">
+        <div class="container-lg pb-md-2">
+            <div class="row justify-content-between border-2 mb-0 mb-md-2">
+
+                <!-- teleraph logo -->
+                <div class="col-3 col-sm-4 col-xl-3 mb-0">
+                    <!-- this is shown when the page is bigger than sm -->
+                    <div class="text-danger small fw-bold border d-none d-lg-inline p-1 text-nowrap">UK News Website of
+                        the Year
+                        <span>2024</span>
+                    </div>
+                    <!-- this is shown when the page is smaller than sm -->
+                    <div class="text-danger fw-bold d-inline d-lg-none text-nowrap" style="font-size: 9px;">UK News
+                        Website of
+                        the
+                        Year <span>2024</span></div>
+                    <a href="/">
+                        <img src="https://placehold.co/285x48" width="285" height="48" alt="Logo"
+                             class="d-none d-lg-inline"/>
+                        <img src="https://placehold.co/210x34" width="210" height="34" alt="Logo"
+                             class="d-inline d-lg-none"/>
+                    </a>
+                </div>
+
+                <!-- highlighted articles -->
+                <div class="col col-sm-10 col-md-7 d-none d-md-block">
+                    <div class="row g-3">
+
+                        <article class="col d-flex border-start pt-2 pb-3">
+                            <img src="img1.png" alt="" width="60" height="60" class="me-2"/>
+                            <div>
+                                <h6 class="mb-1 fw-bold small"><a href="#"
+                                                                  class="text-decoration-none text-reset text-uppercase">Trump
+                                    Unpacked</a></h6>
+                                <p class="mb-0 small text-muted">Essential analysis of the issues...</p>
+                            </div>
+                        </article>
+
+                        <article class="col d-none d-md-flex border-start pt-2 pb-3">
+                            <img src="img2.png" alt="" width="60" height="60" class="me-2"/>
+                            <div>
+                                <h6 class="mb-1 fw-bold small"><a href="#"
+                                                                  class="text-decoration-none text-reset text-uppercase">Download
+                                    the
+                                    App</a></h6>
+                                <p class="mb-0 small text-muted">Try 14 days free with live news...</p>
+                            </div>
+                        </article>
+
+                        <article class="col d-none d-xl-flex border-start pt-2 pb-3">
+                            <img src="img3.png" alt="" width="60" height="60" class="me-2"/>
+                            <div>
+                                <h6 class="mb-1 fw-bold small"><a href="#"
+                                                                  class="text-decoration-none text-reset text-uppercase">From
+                                    the
+                                    Editor</a></h6>
+                                <p class="mb-0 small text-muted">A round-up of the week’s best articles</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- subscribe + login + burger when page smaller than md -->
+                <div class="col container-fluid m-0 p-0 d-md-none d-flex">
+                    <div class="container-lg position-relative d-flex aling-items-start justify-content-end h-100">
+                        <!-- subscribe button -->
+                        <div class="position-relative d-flex border-start align-items-center">
+                            <a href="#" aria-label="Subscribe to Telegraph"
+                               class="subscribe-button px-2 h-100 align-content-center text-decoration-none text-nowrap">
+                                Subscribe now
+                            </a>
+                        </div>
+
+                        <!-- login button -->
+                        <div class="position-relative d-flex border-start align-items-center underline-on-hover">
+                            <a href="#" aria-label="Log into your account"
+                               class="px-2 h-100 align-content-center text-decoration-none text-nowrap text-reset">
+                                Log in
+                            </a>
+                        </div>
+
+                        <!-- burger button -->
+                        <div class="position-relative d-flex border-start align-items-center underline-on-hover">
+                            <a href="#" aria-label="More actions"
+                               class="px-2 h-100 align-content-center text-decoration-none text-nowrap text-reset">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                     class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top section end -->
+
+
+    <!-- bottom section -->
+    <div class="topbar container-fluid m-0 p-0">
+        <div class="container-lg position-relative d-flex aling-items-start h-100">
+            <!-- navbar -->
+            <div class="flex-grow-1 overflow-x-auto">
+                <div class="w-auto px-0 h-100">
+                    <nav aria-label="Website navigation" class="navbar navbar-expand py-0 h-100">
+                        <ul class="nav-scroll-wrapper navbar-nav flex-nowrap align-items-center h-100">
+                            <li class="nav-item h-100 align-content-center h-100 align-content-center">
+                                <a class="nav-link active text-nowrap" aria-current="page" href="#">Your Say</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">News</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Sport</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Business</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Money</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Opinion</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Ukraine</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Travel</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Health</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Lifestyle</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Culture</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Puzzles</a>
+                            </li>
+                            <li class="nav-item h-100 align-content-center">
+                                <a class="nav-link active" aria-current="page" href="#">Podcasts</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- lang selector -->
+            <div class="position-relative d-none d-lg-flex border-start align-items-center">
+                <div class="dropdown">
+                    <button
+                            class="dropdown-toggle border-0 rounded-pill bg-transparent px-3 py-1"
+                            type="button"
+                            id="langDropdownBtn"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                    >
+                        UK Edition
+                    </button>
+                    <ul class="dropdown-menu rounded-0" aria-labelledby="langDropdownBtn">
+                        <li><a class="dropdown-item" href="#">US Edition</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- search button -->
+            <div class="position-relative d-none d-md-flex border-start align-items-center">
+                <a href="#" aria-label="Search Telegraph"
+                   class="px-4 h-100 align-content-center text-decoration-none text-nowrap text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search"
+                         viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- subscribe button -->
+            <div class="position-relative d-none d-md-flex border-start align-items-center">
+                <a href="#" aria-label="Subscribe to Telegraph"
+                   class="subscribe-button px-4 h-100 align-content-center text-decoration-none text-nowrap">
+                    Subscribe now
+                </a>
+            </div>
+
+            <!-- login button -->
+            <div class="position-relative d-none d-md-flex border-start align-items-center underline-on-hover">
+                <a href="#" aria-label="Log into your account"
+                   class="px-4 h-100 align-content-center text-decoration-none text-nowrap text-reset">
+                    Log in
+                </a>
+            </div>
+
+            <!-- burger button -->
+            <div class="position-relative d-none d-md-flex border-start align-items-center underline-on-hover">
+                <a href="#" aria-label="More actions"
+                   class="px-4 h-100 align-content-center text-decoration-none text-nowrap text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                         class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- bottom section end -->
+</header>
+
+
+<main class="container-lg pt-md-4 p-0">
+    <div class="row justify-content-center p-3 p-lg-0">
+        <div class="col col-12 col-lg-8">
+            <div class="row">
+
+                <section class="col col-12 border-bottom border-2 border-dark py-2">
+                    <div class="row row-gap-3">
+                        <article class="col col-12 col-md-8">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h3>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    <span class="badge bg-danger px-1 py-1 text-uppercase">Live</span>
+                                                    Pound hits seven-month high amid dollar turmoil
+                                                </a>
+                                            </h3>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <ul class="ps-3 pb-1">
+                                            <li>Trump ignites fresh markets chaos as Reeves heads to Washington</li>
+                                            <li>Asian solar industry rocked with 3,500pc tariffs</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-4 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/294x189"
+                                 alt="Image description"
+                                 width="294" height="189"/>
+                        </div>
+
+                        <article class="col col-12 border-top">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 border-bottom border-2 border-dark">
+                    <div class="row row-gap-3 mt-2">
+                        <article class="col col-12 col-md-6">
+
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- package heading -->
+                                        <h3 class="d-none d-md-block text-uppercase text-danger small mb-2">Top
+                                            Story</h3>
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h3 class="h3">
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    <span class="badge bg-danger px-1 py-1 text-uppercase">Live</span>
+                                                    Lorem ipsum dolor sit amet. In optio aliquam non voluptatem
+                                                </a>
+                                            </h3>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <ul class="ps-3 pb-1">
+                                            <li>Rem quos culpa et tempore voluptas eos ipsa.</li>
+                                            <li>Est corrupti odit qui Quis doloremque autem.</li>
+                                            <li>Sed velit iste aut veritatis beatae sit possimus.</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-6 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/604x378"
+                                 alt="Image description"
+                                 width="604" height="378"/>
+                        </div>
+
+
+                        <article class="col col-12 col-md-3 border-top">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col col-12 col-md-3 border-top">
+                            <div class="row my-2 border-start">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col col-12 col-md-3 border-top">
+                            <div class="row mt-2 border-start">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col col-12 col-md-3 border-top">
+                            <div class="row mt-2 border-start">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 col-md-8 border-bottom border-2 border-dark py-2">
+                    <div class="row row-gap-3">
+                        <article class="col col-12 col-md-6">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h4>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Pound hits seven-month high amid dollar turmoil
+                                                </a>
+                                            </h4>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <p class="ps-3 pb-1">
+                                            Lorem ipsum dolor sit amet. Qui architecto repudiandae in tempora mollitia
+                                            sit fugit galisum
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-6 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/294x189" alt="Image description"
+                                 width="294" height="189"/>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 col-md-4 border-bottom border-2 border-dark mt-2">
+                    <div class="row row-gap-3 border-start">
+                        <article class="col col-12">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h4>
+                                                <a href="#" class="text-decoration-none text-reset w-100">
+                                                    Lorem ipsum dolor sit amet.
+                                                </a>
+                                            </h4>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <p class="ps-3 pb-1">
+                                            Ex consequatur internos et sequi facilis est voluptas quidem. Est
+                                            consectetur
+                                            debitis est laborum tempora aut facere adipisci.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 border-bottom border-2 border-dark py-2">
+                    <div class="row row-gap-3">
+                        <article class="col col-12 col-md-8">
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h3>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Pound hits seven-month high amid dollar turmoil
+                                                </a>
+                                            </h3>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <ul class="ps-3 pb-1">
+                                            <li>Trump ignites fresh markets chaos as Reeves heads to Washington</li>
+                                            <li>Asian solar industry rocked with 3,500pc tariffs</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-4 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/294x189" alt="Image description"
+                                 width="294" height="189"/>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 border-bottom border-2 border-dark">
+                    <div class="row row-gap-3 mt-2">
+                        <article class="col col-12 col-md-6">
+
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h3 class="h3">
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Lorem ipsum dolor sit amet. In optio aliquam non voluptatem
+                                                </a>
+                                            </h3>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <p class="ps-3 pb-1">
+                                            Rem quos culpa et tempore voluptas eos ipsa Est corrupti odit qui Quis
+                                            doloremque autem Sed velit iste aut veritatis beatae sit possimus
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-6 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/604x378"
+                                 alt="Image description"
+                                 width="604" height="378"/>
+                        </div>
+
+
+                        <article class="col col-12 col-md-4 border-top">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col col-12 col-md-4 border-top">
+                            <div class="row my-2 border-start">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col col-12 col-md-4 border-top">
+                            <div class="row mt-2 border-start">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h5>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
+                                                    molestias et enim
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section class="col col-12 col-md-4 border-bottom border-2 border-dark mt-2">
+                    <article class="col col-12">
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <div class="p-0">
+
+                                    <!-- headline -->
+                                    <div class="mb-2">
+                                        <h4>
+                                            <a href="#" class="text-decoration-none text-reset w-100">
+                                                Lorem ipsum dolor sit amet.
+                                            </a>
+                                        </h4>
+                                    </div>
+
+                                    <!-- bottom text -->
+                                    <p class="ps-3 pb-1">
+                                        Ex consequatur internos et sequi facilis est voluptas quidem. Est consectetur
+                                        debitis est laborum tempora aut facere adipisci.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </section>
+
+                <section class="col col-12 col-md-8 border-bottom border-2 border-dark py-2">
+                    <div class="row row-gap-3 border-start">
+                        <article class="col col-12 col-md-6">
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <div class="p-0">
+
+                                        <!-- headline -->
+                                        <div class="mb-2">
+                                            <h4>
+                                                <a href="#" class="text-decoration-none text-reset">
+                                                    Pound hits seven-month high amid dollar turmoil
+                                                </a>
+                                            </h4>
+                                        </div>
+
+                                        <!-- bottom text -->
+                                        <p class="ps-3 pb-1">
+                                            Lorem ipsum dolor sit amet. Qui architecto repudiandae in tempora mollitia
+                                            sit fugit galisum
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <div class="col col-12 col-md-6 order-first order-md-0">
+                            <img class="img-fluid w-100" src="https://placeholder.pics/svg/294x189" alt="Image description"
+                                 width="294" height="189"/>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <div class="container-fluid col col-12 col-lg-4">
+            <section class="col col-12">
+                palle 2
+            </section>
+        </div>
+
+    </div>
+</main>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

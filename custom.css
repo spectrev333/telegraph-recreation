@@ -1,0 +1,45 @@
+.nav-scroll-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+}
+
+.nav-scroll-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.subscribe-button {
+    background-color: #02c3aa;
+    color: #072a3a;
+}
+
+.subscribe-button:hover {
+    background-color: #04777b;
+    color: white;
+}
+
+.nav-item {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #04777b;
+}
+
+.underline-on-hover {
+    border-bottom: 2px solid white;
+}
+
+.underline-on-hover:hover {
+    border-bottom: 2px solid #04777b;
+}
+
+.topbar {
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .topbar {
+        height: 64px;
+    }
+}
