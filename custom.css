@@ -60,6 +60,21 @@
     white-space: nowrap;
 }
 
+.transparent-clickable-pill {
+    border-radius: 1000px;
+    border: 1px solid #ddd;
+    background: transparent;
+    padding: 7px 12px 5px;
+    margin-right: 8px;
+    scroll-snap-align: start;
+    white-space: nowrap;
+}
+
+.transparent-clickable-pill:hover {
+    color: white;
+    background: #222;
+}
+
 button {
     background-color: unset;
     box-shadow: none;
@@ -72,4 +87,8 @@ button {
 
 .utility-max-width {
     max-width: 322px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
