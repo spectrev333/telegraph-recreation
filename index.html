@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegraph</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="custom.css">
@@ -76,9 +77,9 @@
 
                 <!-- subscribe + login + burger when page smaller than md -->
                 <div class="col container-fluid m-0 p-0 d-md-none d-flex">
-                    <div class="container-lg position-relative d-flex aling-items-start justify-content-end h-100">
+                    <div class="container-lg m-0 p-0 position-relative d-flex aling-items-start justify-content-end h-100">
                         <!-- subscribe button -->
-                        <div class="position-relative d-flex border-start align-items-center">
+                        <div class="position-relative d-none d-sm-flex border-start align-items-center">
                             <a href="#" aria-label="Subscribe to Telegraph"
                                class="subscribe-button px-2 h-100 align-content-center text-decoration-none text-nowrap">
                                 Subscribe now
@@ -230,7 +231,7 @@
 
 
 <main class="container-lg pt-md-4 p-0">
-    <div class="row justify-content-center">
+    <div class="row g-0 justify-content-center">
 
         <!-- main column -->
         <div class="col col-12 col-lg-8 p-3">
@@ -240,7 +241,7 @@
                     <div class="row g-0 row-gap-3">
                         <article class="col col-12 col-md-8 position-relative">
 
-                            <div class="row">
+                            <div class="row g-0">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -342,7 +343,7 @@
 
 
                         <article class="col col-12 col-md-3 border-top position-relative">
-                            <div class="row g-0 mt-2">
+                            <div class="row g-0 mt-2 px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -365,7 +366,7 @@
                         </article>
 
                         <article class="col col-12 col-md-3 border-top position-relative">
-                            <div class="row g-0 my-2 border-start px-2">
+                            <div class="row g-0 my-2 responsive-border-start px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -388,7 +389,7 @@
                         </article>
 
                         <article class="col col-12 col-md-3 border-top position-relative">
-                            <div class="row g-0 mt-2 border-start px-2">
+                            <div class="row g-0 mt-2 responsive-border-start px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -411,7 +412,7 @@
                         </article>
 
                         <article class="col col-12 col-md-3 border-top position-relative">
-                            <div class="row g-0 mt-2 border-start px-2">
+                            <div class="row g-0 mt-2 responsive-border-start px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -474,7 +475,7 @@
                 </section>
 
                 <section class="col col-12 col-md-4 border-bottom border-2 border-dark mt-2">
-                    <div class="row g-0 row-gap-3 border-start px-2">
+                    <div class="row g-0 row-gap-3 responsive-border-start px-2">
                         <article class="col col-12 position-relative">
                             <div class="row g-0 mt-2">
                                 <div class="col-12">
@@ -604,7 +605,7 @@
                         </article>
 
                         <article class="col col-12 col-md-4 border-top position-relative">
-                            <div class="row g-0 my-2 border-start px-2">
+                            <div class="row g-0 my-2 responsive-border-start px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -627,7 +628,7 @@
                         </article>
 
                         <article class="col col-12 col-md-4 border-top position-relative">
-                            <div class="row g-0 mt-2 border-start px-2">
+                            <div class="row g-0 mt-2 responsive-border-start px-2">
                                 <div class="col-12">
                                     <div class="p-0">
 
@@ -681,7 +682,7 @@
                 </section>
 
                 <section class="col col-12 col-md-8 border-bottom border-2 border-dark py-2">
-                    <div class="row g-0 row-gap-3 border-start px-2">
+                    <div class="row g-0 row-gap-3 responsive-border-start px-2">
                         <article class="col col-12 col-md-6 position-relative">
                             <div class="row g-0 mt-2">
                                 <div class="col-12">
@@ -935,8 +936,8 @@
     </div>
 
     <!-- saved articles row -->
-    <section class="row g-1 px-1 mb-2">
-        <h1 class="h3 align-items-center pt-2 pb-3 border-bottom position-relative">
+    <section class="row g-1 mb-2">
+        <h1 class="h3 align-items-center p-2 border-bottom position-relative">
             <a href="#" class="stretched-link text-decoration-none text-reset ">
                 Your saved articles
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -947,7 +948,7 @@
 
             </a>
         </h1>
-        <div class="col-12 d-flex flex-row">
+        <div class="col-12 d-flex flex-row flex-nowrap overflow-x-scroll ps-3">
             <button class="clickable-pill active">All</button>
             <button class="clickable-pill">Politics</button>
             <button class="clickable-pill">Business</button>
@@ -957,7 +958,7 @@
             <button class="clickable-pill">Money</button>
         </div>
 
-        <ul class="col d-flex flex-nowrap overflow-x-scroll pb-3 gap-3">
+        <ul class="col d-flex flex-nowrap overflow-x-scroll pb-3 gap-3 ps-3">
             <li class="d-flex flex-column flex-shrink-0 p-2">
                 <a href="#" class="text-reset text-decoration-none">Start building your reading list, log in or create
                     an account.
@@ -1015,11 +1016,11 @@
 
     <!-- podcasts row -->
     <section class="row g-1 mb-2">
-        <h1 class="h3 align-items-center pt-2 pb-3 border-bottom position-relative">
+        <h1 class="h3 align-items-center pt-2 pb-3 border-bottom position-relative p-2">
             Podcasts
         </h1>
 
-        <ul class="col d-flex flex-nowrap overflow-x-scroll pb-3 gap-3">
+        <ul class="col d-flex flex-nowrap overflow-x-scroll ps-3 gap-3">
             <li class="card utility-max-width flex-shrink-0">
                 <img src="https://placeholder.pics/svg/324x203" class="card-img-top" alt="Podcast image background">
                 <div class="card-body position-relative">
@@ -1116,7 +1117,7 @@
 
     <!-- puzzles row -->
     <section class="row g-1 mb-2">
-        <h1 class="h3 align-items-center pt-0 pb-3 border-top position-relative">
+        <h1 class="h3 align-items-center pt-0 pb-3 border-top position-relative p-2">
             Puzzles
         </h1>
 
@@ -1146,7 +1147,7 @@
             </li>
 
             <li class="col-12 col-md-6 col-lg-3 pt-3 position-relative">
-                <div class="row g-0 d-flex align-items-center justify-content-between px-3 border-start">
+                <div class="row g-0 d-flex align-items-center justify-content-between px-3 responsive-border-start">
                     <div class="col flex-grow-1">
                         <a class="text-decoration-none text-danger fw-bold text-center d-flex align-items-center stretched-link"
                            href="#">
@@ -1170,7 +1171,7 @@
             </li>
 
             <li class="col-12 col-md-6 col-lg-3 pt-3 position-relative">
-                <div class="row g-0 d-flex align-items-center justify-content-between px-3 border-start">
+                <div class="row g-0 d-flex align-items-center justify-content-between px-3 responsive-border-start">
                     <div class="col flex-grow-1">
                         <a class="text-decoration-none text-danger fw-bold text-center d-flex align-items-center stretched-link"
                            href="#">
@@ -1194,7 +1195,7 @@
             </li>
 
             <li class="col-12 col-md-6 col-lg-3 pt-3 position-relative">
-                <div class="row g-0 d-flex align-items-center justify-content-between px-3 border-start">
+                <div class="row g-0 d-flex align-items-center justify-content-between px-3 responsive-border-start">
                     <div class="col flex-grow-1">
                         <a class="text-decoration-none text-danger fw-bold text-center d-flex align-items-center stretched-link"
                            href="#">
@@ -1222,7 +1223,7 @@
 
     <!-- more articles row -->
     <section class="row g-1 mb-2">
-        <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative">
+        <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative p-2">
             <a href="#" class="stretched-link text-decoration-none text-reset ">
                 More News
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -1302,7 +1303,7 @@
     </section>
 
     <section class="row g-1 mb-2">
-        <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative">
+        <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative p-2">
             <a href="#" class="stretched-link text-decoration-none text-black-50 d-flex align-items-center gap-2">
                 <span class="badge bg-primary py-1 px-2 text-uppercase small">Guides</span>
                 <span>Browse over 200 guides</span>

@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid red;
+} */
+
 .nav-scroll-wrapper {
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
@@ -41,6 +45,16 @@
 @media (min-width: 992px) {
     .topbar {
         height: 64px;
+    }
+}
+
+.responsive-border-start {
+    border-left: 1px solid #ddd; /* Adjust the border style as needed */
+}
+
+@media (max-width: 767.98px) {
+    .responsive-border-start {
+        border-left: none !important;
     }
 }
 
