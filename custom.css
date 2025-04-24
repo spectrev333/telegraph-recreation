@@ -103,6 +103,6 @@ button {
     max-width: 322px;
 }
 
-a:hover {
-    text-decoration: underline;
+.bg-dark-blue {
+    background-color: #073349;    
 }
