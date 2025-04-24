@@ -106,3 +106,7 @@ button {
 .bg-dark-blue {
     background-color: #073349;    
 }
+
+.smallest {
+    font-size: 9px;
+}
