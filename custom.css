@@ -2,13 +2,31 @@
     outline: 1px solid red;
 } */
 
-.nav-scroll-wrapper {
+@font-face {
+    font-family: Playfair;
+    src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+.fancy-text {
+    font-family: Playfair, serif;
+}
+
+.link-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-underline:hover {
+    text-decoration: underline;
+}
+
+.scroll-wrapper {
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE/Edge */
 }
 
-.nav-scroll-wrapper::-webkit-scrollbar {
+.scroll-wrapper::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
 }
 
@@ -109,4 +127,31 @@ button {
 
 .smallest {
     font-size: 9px;
+}
+
+.lang-selector {
+    background: transparent;
+    cursor: pointer;
+}
+
+.lang-selector:hover {
+    background: #f8f8f8;
+}
+
+.dropdown:hover .lang-selector-dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lang-selector-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute; /* To position it correctly */
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.border {
+    border-color: #b5b5b5;
 }

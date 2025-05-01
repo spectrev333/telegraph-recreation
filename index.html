@@ -22,13 +22,13 @@
                 <!-- teleraph logo -->
                 <div class="col-3 col-sm-4 col-xl-3 mb-0 position-relative">
                     <!-- this is shown when the page is bigger than sm -->
-                    <div class="text-danger small fw-bold border d-none d-lg-inline p-1 text-nowrap">UK News Website
+                    <div class="text-danger text-uppercase fancy-text small fw-bold border d-none d-lg-inline p-1 text-nowrap">UK News Website
                         of
                         the Year
                         <span>2024</span>
                     </div>
                     <!-- this is shown when the page is smaller than sm -->
-                    <div class="text-danger fw-bold d-inline d-lg-none text-nowrap smallest">UK News
+                    <div class="text-danger text-uppercase fancy-text fw-bold d-inline d-lg-none text-nowrap smallest">UK News
                         Website of
                         the
                         Year <span>2024</span></div>
@@ -123,11 +123,24 @@
     <!-- bottom section -->
     <div class="topbar container-fluid m-0 p-0">
         <div class="container-lg position-relative d-flex aling-items-start h-100">
+
+            <!-- search button page width smaller than md -->
+            <div class="position-relative d-flex d-md-none align-items-center">
+                <a href="#" aria-label="Search Telegraph"
+                   class="d-flex px-2 border-end align-content-center text-decoration-none text-nowrap text-reset">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-search"
+                         viewBox="0 0 16 16">
+                        <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </a>
+            </div>
+
             <!-- navbar -->
             <div class="flex-grow-1 overflow-x-auto">
                 <div class="w-auto px-0 h-100">
                     <nav aria-label="Website navigation" class="navbar navbar-expand py-0 h-100">
-                        <ul class="nav-scroll-wrapper navbar-nav flex-nowrap align-items-center h-100">
+                        <ul class="scroll-wrapper navbar-nav flex-nowrap align-items-center h-100 px-2">
                             <li class="nav-item h-100 align-content-center h-100 align-content-center">
                                 <a class="nav-link active text-nowrap" aria-current="page" href="#">Your Say</a>
                             </li>
@@ -173,20 +186,19 @@
                 </div>
             </div>
 
-            <!-- lang selector -->
+            <!-- language selector -->
             <div class="position-relative d-none d-lg-flex border-start align-items-center">
-                <div class="dropdown">
-                    <button class="dropdown-toggle border-0 rounded-pill bg-transparent px-2 py-1" type="button"
-                            id="langDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown h-100 lang-selector">
+                    <button class="border-0 h-100 w-100 px-3 text-nowrap">
                         🇬🇧 UK Edition
                     </button>
-                    <ul class="dropdown-menu rounded-0" aria-labelledby="langDropdownBtn">
-                        <li><a class="dropdown-item" href="#">🇺🇸US Edition</a></li>
+                    <ul class="position-absolute w-100 list-unstyled px-3 bg-light lang-selector-dropdown">
+                        <li><a class="dropdown-item py-3" href="#">🇺🇸 US Edition</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- search button -->
+            <!-- search button page width bigger than md -->
             <div class="position-relative d-none d-md-flex border-start align-items-center">
                 <a href="#" aria-label="Search Telegraph"
                    class="px-4 h-100 align-content-center text-decoration-none text-nowrap text-reset">
@@ -247,7 +259,7 @@
                         <article class="col-12 col-md-8 position-relative row g-0">
                             <div class="col-12 p-0 mb-2">
                                 <h3>
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         <span class="badge bg-danger px-1 py-1 text-uppercase">Live</span>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                                     </a>
@@ -265,10 +277,10 @@
                                  width="294" height="189"/>
                         </div>
 
-                        <article class="col-12 border-top position-relative px-2 mt-2">
+                        <article class="col-12 border-top position-relative px-2 px-sm-0 mt-2">
                             <div class="col-12 p-0 mb-2">
                                 <h3 class="h5">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                         molestias et enim
                                     </a>
@@ -287,7 +299,7 @@
                             <div class="col-12 p-0">
                                 <h3 class="d-none d-md-block text-uppercase text-danger small mb-2">Top Story</h3>
                                 <h3 class="h3 mb-2">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         <span class="badge bg-danger px-1 py-1 text-uppercase">Live</span>
                                         Lorem ipsum dolor sit amet. In optio aliquam non voluptatem
                                     </a>
@@ -309,7 +321,7 @@
                         <article class="col-12 col-md-3 border-top position-relative">
                             <div class="my-2 px-2">
                                 <h3 class="h5 mb-2">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                         molestias et enim
                                     </a>
@@ -321,7 +333,7 @@
                         <article class="col-12 col-md-3 border-top position-relative">
                             <div class="my-2 px-2 responsive-border-start">
                                 <h3 class="h5 mb-2">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                         molestias et enim
                                     </a>
@@ -333,7 +345,7 @@
                         <article class="col-12 col-md-3 border-top position-relative">
                             <div class="my-2 px-2 responsive-border-start">
                                 <h3 class="h5 mb-2">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                         molestias et enim
                                     </a>
@@ -345,7 +357,7 @@
                         <article class="col-12 col-md-3 border-top position-relative">
                             <div class="my-2 px-2 responsive-border-start">
                                 <h3 class="h5 mb-2">
-                                    <a href="#" class="text-decoration-none text-reset stretched-link">
+                                    <a href="#" class="link-underline fancy-text  stretched-link">
                                         Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                         molestias et enim
                                     </a>
@@ -360,11 +372,11 @@
                     <div class="row g-0 row-gap-3 px-2">
                         <article class="col-12 col-md-6 position-relative">
                             <h4 class="mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </a>
                             </h4>
-                            <p class="ps-2 pb-1">
+                            <p class="pb-1">
                                 Lorem ipsum dolor sit amet. Qui architecto repudiandae in tempora
                                 mollitia sit fugit galisum
                             </p>
@@ -382,11 +394,11 @@
                     <div class="row g-0 row-gap-3 responsive-border-start px-2">
                         <article class="col-12 position-relative">
                             <h4 class="mb-2">
-                                <a href="#" class="text-decoration-none text-reset w-100 stretched-link">
+                                <a href="#" class="link-underline fancy-text  w-100 stretched-link">
                                     Lorem ipsum dolor sit amet.
                                 </a>
                             </h4>
-                            <p class="ps-2 pb-1">
+                            <p class="pb-1">
                                 Ex consequatur internos et sequi facilis est voluptas quidem. Est
                                 consectetur debitis est laborum tempora aut facere adipisci.
                             </p>
@@ -398,7 +410,7 @@
                     <div class="row g-0 row-gap-3 mt-2 px-2">
                         <article class="col-12 col-md-8 position-relative p-0">
                             <h3 class="mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </a>
                             </h3>
@@ -420,11 +432,11 @@
                     <article class="col-12 col-md-6 position-relative">
                         <div class="p-0">
                             <h3 class="h3 mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet. In optio aliquam non voluptatem
                                 </a>
                             </h3>
-                            <p class="ps-3 pb-1">
+                            <p class="pb-1">
                                 Rem quos culpa et tempore voluptas eos ipsa Est corrupti odit qui Quis
                                 doloremque autem Sed velit iste aut veritatis beatae sit possimus
                             </p>
@@ -439,7 +451,7 @@
                     <article class="col-12 col-md-4 border-top position-relative">
                         <div class="my-2 px-2">
                             <h3 class="h5 mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                     molestias et enim
                                 </a>
@@ -451,7 +463,7 @@
                     <article class="col-12 col-md-4 border-top position-relative">
                         <div class="my-2 px-2 responsive-border-start">
                             <h3 class="h5 mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                     molestias et enim
                                 </a>
@@ -463,7 +475,7 @@
                     <article class="col-12 col-md-4 border-top position-relative">
                         <div class="my-2 px-2 responsive-border-start">
                             <h3 class="h5 mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Sed suscipit quia eos voluptas ullam qui dolore ipsam ut fugiat
                                     molestias et enim
                                 </a>
@@ -476,11 +488,11 @@
                 <section class="col-12 col-md-4 border-bottom border-2 border-dark mt-2 px-2">
                     <article class="col-12 position-relative p-0 mb-2">
                         <h4 class="mb-2">
-                            <a href="#" class="text-decoration-none text-reset w-100 stretched-link">
+                            <a href="#" class="link-underline fancy-text  w-100 stretched-link">
                                 Lorem ipsum dolor sit amet.
                             </a>
                         </h4>
-                        <p class="ps-3 pb-1">
+                        <p class="pb-1">
                             Ex consequatur internos et sequi facilis est voluptas quidem. Est
                             consectetur debitis est laborum tempora aut facere adipisci.
                         </p>
@@ -491,11 +503,11 @@
                     <div class="row g-0 row-gap-3 responsive-border-start px-2 mb-2">
                         <article class="col-12 col-md-6 position-relative p-0">
                             <h4 class="mb-2">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </a>
                             </h4>
-                            <p class="ps-3 pb-1">
+                            <p class="pb-1">
                                 Lorem ipsum dolor sit amet. Qui architecto repudiandae in tempora
                                 mollitia sit fugit galisum
                             </p>
@@ -517,16 +529,19 @@
             <div class="row g-0 px-1">
                 <section class="col-12 pt-2 border-bottom">
                     <h3 class="d-none d-md-block text-uppercase text-danger small mb-2 fw-bold">Daily Podcast</h3>
-                    <h3 class="mb-2">Title of the daily podcast</h3>
+                    <h3 class="mb-2 fancy-text">Title of the daily podcast</h3>
                     <p class="small">
                         This is the description of the daily podcast, this will be replaced by lorem ipsum soon.
                         As of now i'm just putting some text to fill up this space.
                     </p>
                     <div class="d-flex bg-light m-2 p-2 rounded-2 flex-row align-items-center">
-                        <img class="img-fluid me-2" src="https://placeholder.pics/svg/50x50" height="50" width="50" alt="Podcast thumbnail"/>
+                        <img class="img-fluid me-2" src="https://placeholder.pics/svg/50x50" height="50" width="50"
+                             alt="Podcast thumbnail"/>
 
-                        <button aria-label="daily podcast play button" class="text-decoration-none bg-dark text-reset rounded-circle border-1 border border-secondary p-2 d-flex justify-content-center align-items-center me-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <button aria-label="daily podcast play button"
+                                class="text-decoration-none bg-dark text-reset rounded-circle border-1 border border-secondary p-2 d-flex justify-content-center align-items-center me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                 class="bi bi-play-fill" viewBox="0 0 16 16">
                                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
                             </svg>
                         </button>
@@ -548,10 +563,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4>
+                    <h4 class="fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -563,10 +578,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4>
+                    <h4 class="fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -578,10 +593,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4>
+                    <h4 class="fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -596,10 +611,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4 class="h5">
+                    <h4 class="h5 fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -611,10 +626,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4 class="h5">
+                    <h4 class="h5 fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -719,10 +734,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4 class="h5">
+                    <h4 class="h5 fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -734,10 +749,10 @@
                              height="56" width="56"/>
                     </a>
                     <a href="#" aria-label="Articles by Lorem Ipsum"
-                       class="text-decoration-none text-uppercase fw-bold text-danger p-1 stretched-link">
+                       class="link-underline text-uppercase fw-bold text-danger p-1 stretched-link">
                         Lorem Ipsum
                     </a>
-                    <h4 class="h5">
+                    <h4 class="h5 fancy-text">
                         Lorem ipsum dolor sit amet et officiis autem ex iure.
                     </h4>
                 </article>
@@ -749,7 +764,7 @@
     <!-- saved articles section -->
     <section class="row g-1 mb-2">
         <h1 class="h3 align-items-center p-2 border-bottom position-relative">
-            <a href="#" class="stretched-link text-decoration-none text-reset ">
+            <a href="#" class="stretched-link link-underline text-reset ">
                 Your saved articles
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1045,7 +1060,7 @@
     <!-- more articles section -->
     <section class="row g-1 mb-2">
         <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative p-2">
-            <a href="#" class="stretched-link text-decoration-none text-reset ">
+            <a href="#" class="stretched-link link-underline text-reset ">
                 More News
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1065,7 +1080,7 @@
                              alt="Article image background">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
@@ -1077,28 +1092,28 @@
                     <ul class="col d-flex flex-column list-unstyled p-2">
                         <li class="position-relative p-1">
                             <h2 class="h5">
-                                <a href="#" class="text-reset text-decoration-none stretched-link">lorem ipsum dolor sit
+                                <a href="#" class="link-underline fancy-text stretched-link">lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
                         </li>
                         <li class="position-relative border-top p-1">
                             <h2 class="h5">
-                                <a href="#" class="text-reset text-decoration-none stretched-link">lorem ipsum dolor sit
+                                <a href="#" class="link-underline fancy-text stretched-link">lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
                         </li>
                         <li class="position-relative border-top p-1">
                             <h2 class="h5">
-                                <a href="#" class="text-reset text-decoration-none stretched-link">lorem ipsum dolor sit
+                                <a href="#" class="link-underline fancy-text stretched-link">lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
                         </li>
                         <li class="position-relative border-top p-1">
                             <h2 class="h5">
-                                <a href="#" class="text-reset text-decoration-none stretched-link">lorem ipsum dolor sit
+                                <a href="#" class="link-underline fancy-text stretched-link">lorem ipsum dolor sit
                                     amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
@@ -1112,7 +1127,7 @@
                              alt="Article image background">
                         <div class="card-body">
                             <h2 class="card-title">
-                                <a href="#" class="text-decoration-none text-reset stretched-link">
+                                <a href="#" class="link-underline fancy-text  stretched-link">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 </a>
                             </h2>
@@ -1127,7 +1142,7 @@
     <!-- guides section -->
     <section class="row g-1 mb-2">
         <h1 class="h3 align-items-center pt-0 pb-3 border-bottom border-top position-relative p-2">
-            <a href="#" class="stretched-link text-decoration-none text-black-50 d-flex align-items-center gap-2">
+            <a href="#" class="stretched-link link-underline text-black-50 d-flex align-items-center gap-2">
                 <span class="badge bg-primary py-1 px-2 text-uppercase small">Guides</span>
                 <span>Browse over 200 guides</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -1141,7 +1156,7 @@
         <ul class="col d-flex flex-nowrap overflow-x-scroll pb-3 gap-3">
             <li class="d-flex flex-column p-4 rounded-2 bg-opacity-25 bg-info flex-fill">
                 <h1 class="h3 align-items-center pb-2 position-relative">
-                    <a href="#" class="stretched-link text-decoration-none text-reset ">
+                    <a href="#" class="stretched-link link-underline fancy-text ">
                         Lorem
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1161,7 +1176,7 @@
             </li>
             <li class="d-flex flex-column p-4 rounded-2 bg-opacity-25 bg-info flex-fill">
                 <h1 class="h3 align-items-center pb-2 position-relative">
-                    <a href="#" class="stretched-link text-decoration-none text-reset ">
+                    <a href="#" class="stretched-link link-underline fancy-text ">
                         Lorem
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1181,7 +1196,7 @@
             </li>
             <li class="d-flex flex-column p-4 rounded-2 bg-opacity-25 bg-info flex-fill">
                 <h1 class="h3 align-items-center pb-2 position-relative">
-                    <a href="#" class="stretched-link text-decoration-none text-reset ">
+                    <a href="#" class="stretched-link link-underline fancy-text ">
                         Lorem
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1201,7 +1216,7 @@
             </li>
             <li class="d-flex flex-column p-4 rounded-2 bg-opacity-25 bg-info flex-fill">
                 <h1 class="h3 align-items-center pb-2 position-relative">
-                    <a href="#" class="stretched-link text-decoration-none text-reset ">
+                    <a href="#" class="stretched-link link-underline fancy-text ">
                         Lorem
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1221,7 +1236,7 @@
             </li>
             <li class="d-flex flex-column p-4 rounded-2 bg-opacity-25 bg-info flex-fill">
                 <h1 class="h3 align-items-center pb-2 position-relative">
-                    <a href="#" class="stretched-link text-decoration-none text-reset ">
+                    <a href="#" class="stretched-link link-underline fancy-text ">
                         Lorem
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              class="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -1261,13 +1276,15 @@
                 <!-- Back to top -->
                 <div class="d-flex ms-3 pt-3 ps-3 order-sm-last border-start align-items-center">
                     <a href="#" class="text-decoration-none text-reset pe-2">Back to top</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-chevron-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
                     </svg>
                 </div>
 
                 <!-- Socials -->
-                <div class="d-inline-flex align-items-center px-3 pt-3 overflow-x-scroll">
+                <div class="d-inline-flex align-items-center px-3 pt-3 scroll-wrapper">
                         <span>
                             Follow us:
                         </span>
@@ -1385,6 +1402,7 @@
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="custom.js"></script>
 </body>
 
 </html>
